@@ -1,14 +1,13 @@
-# delayed_email_sending_client
+Скачать в папку,создать виртуальную среду командой
+python -m venv venv
 
-This is a minilalistic service that sends emails with a delay. 
-To start it locally you have to: 
-* clone repo this repo, cd to the folder delayed_email_sending_client
-* create a virtual environment `python -m venv venv` 
-* set env variable SENDGRID_API_KEY with your sendgrid key
-* install requirements from requirements.txt `pip install -r requirements.txt`
-* then you can start it with `python app.py`
+выполнить pip install -r requirements.txt
+затем запустить python app.py
+в браузере запустить  http://127.0.0.1:5000
 
-If you go to main url (localhost:5000/ in default settings) you'll see a form where you can enter a text and delay (in seconds) you want to have for your email. In this repo outgoing and incoming email addresses are dummy, feel free to update them. 
-If you go to url /last_tasks you'll see a list of last 10 scheduled emails. 
-https://lit-waters-54133.herokuapp.com/ | https://git.heroku.com/lit-waters-54133.git
-https://lit-waters-54133.herokuapp.com/
+Добавил поле для указания адреса почты. Можно указать любой, туда и будут приходить письма.
+на хероку не получилось заставить работать(( 
+возможно, не до конца разобрался как flask разворачивать
+
+slack: Peganov Oleg PWS-9
+pegol78@rambler.ru
